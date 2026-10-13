@@ -84,18 +84,16 @@
           </ul>
         </div>
 
-        <div class="terminal rise" style="--d:2" role="img" aria-label="Terminal showing code moving from GitHub through Envoyer to Laravel Forge on AWS">
+        <div class="terminal rise" style="--d:2" role="img" aria-label="Terminal showing code moving from GitHub to a Laravel Forge server on AWS">
           <div class="term-bar"><i></i><i></i><i></i><span>deploy — release.sh</span></div>
           <pre class="term-body" id="term" data-lines='[
             {"t":"$ git push origin main","c":"cmd"},
             {"t":"✓ GitHub      reviewed and merged","c":"ok"},
-            {"t":"→ Envoyer     deploying, zero downtime","c":"run"},
-            {"t":"→ Forge · AWS server updated","c":"run"},
+            {"t":"→ Forge · AWS deploying to the server","c":"run"},
             {"t":"✓ Released    tests green, users happy","c":"ok"}
           ]'><span class="cmd">$ git push origin main</span>
 <span class="ok">✓ GitHub      reviewed and merged</span>
-<span class="run">→ Envoyer     deploying, zero downtime</span>
-<span class="run">→ Forge · AWS server updated</span>
+<span class="run">→ Forge · AWS deploying to the server</span>
 <span class="ok">✓ Released    tests green, users happy</span></pre>
         </div>
       </div>
@@ -140,7 +138,7 @@
         <h2>An engineer who owns the whole path to production.</h2>
         <div class="prose">
           <p>I have spent my career on full-stack web applications, from a biometric clock feeding a payroll system to a multi-site content platform. I am comfortable owning a feature end to end: the data model, the API, the interface, the tests and the release.</p>
-          <p>My core stack is Laravel with Vue and Inertia.js. Code moves from GitHub through Envoyer to servers managed by Laravel Forge on AWS, so releases are repeatable and deploy without downtime.</p>
+          <p>My core stack is Laravel with Vue and Inertia.js. Code moves from GitHub to servers managed by Laravel Forge on AWS, and I use Envoyer for zero-downtime releases when a project calls for it, so releases are repeatable.</p>
           <p>I work with Claude Code on production projects, backed by Laravel Boost, written specs and a large automated test suite. I am still developing my skill with it, and I treat its output as code to be reviewed, never as code to be trusted.</p>
         </div>
       </div>
@@ -176,7 +174,7 @@
                   <li><strong>Support ticketing workflow.</strong> Set up a no-code ticketing system with ClickUp Forms and Automations, integrated with Slack. A client's report becomes a task on the project's ClickUp board, tags the assigned people in Slack, and ends with an email telling the client it is resolved. <a href="#ticketing">See project</a></li>
                   <li><strong>Microsite platform.</strong> Maintain and add features to a product that gives each user a personal space to improve their visibility and connections in a competitive job market.</li>
                   <li><strong>New microsites build.</strong> As the sole developer, rebuilt the legacy microsites on Laravel 13, Vue, Inertia.js and shadcn-vue, working with Claude Code. <a href="#microsites">See project</a></li>
-                  <li><strong>Deployment.</strong> Own releases end to end: code goes from GitHub through Envoyer to servers managed by Laravel Forge on AWS.</li>
+                  <li><strong>Deployment.</strong> Own releases end to end: code goes from GitHub to servers managed by Laravel Forge on AWS, using Envoyer for zero-downtime deploys where the project calls for it.</li>
                 </ul>
               </details>
               <ul class="tags" aria-label="Technologies">
@@ -309,7 +307,7 @@
           <li class="spot"><h3>Give it the project's context</h3><p>Laravel Boost is installed and configured for Claude Code, so it sees my actual framework version, routes, database schema and docs instead of guessing.</p></li>
           <li class="spot"><h3>Work from a spec</h3><p>The Microsites build followed a written module spec and roadmap, so each change had a clear definition of done.</p></li>
           <li class="spot"><h3>Let tests catch mistakes</h3><p>The project has over 1,700 automated tests, and an automatic check that stops new screens from shipping without access rules.</p></li>
-          <li class="spot"><h3>Review before it ships</h3><p>I read the diff, run the suite, and ship it through the same GitHub, Envoyer and Forge pipeline as any other code.</p></li>
+          <li class="spot"><h3>Review before it ships</h3><p>I read the diff, run the suite, and ship it through the same GitHub and Forge deploy pipeline as any other code.</p></li>
         </ol>
       </div>
     </section>
