@@ -48,7 +48,8 @@ a { color: var(--accent); text-underline-offset: 3px; }
 a:hover { color: var(--accent-hover); }
 :focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 4px; }
 .container { width: min(1080px, 100% - 40px); margin-inline: auto; }
-.narrow { max-width: 760px; margin-inline: 0; }
+.narrow > * { max-width: 760px; }
+.narrow > .actions { max-width: none; }
 .skip { position: absolute; left: -999px; top: 8px; background: var(--accent); color: var(--accent-ink); padding: 8px 14px; border-radius: 6px; z-index: 100; }
 .skip:focus { left: 8px; }
 
@@ -81,7 +82,7 @@ h2 { font-size: clamp(1.7rem, 3.4vw, 2.3rem); font-weight: 700; margin-bottom: 2
 .hero-copy { display: grid; gap: 24px; justify-items: start; }
 .status { display: inline-flex; align-items: center; gap: 10px; font-size: .85rem; font-weight: 500; color: var(--muted); border: 1px solid var(--line); border-radius: 99px; padding: 6px 14px; background: var(--surface); }
 .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--ok); box-shadow: 0 0 0 3px color-mix(in srgb, var(--ok) 22%, transparent); }
-.hero h1 { font-size: clamp(2.1rem, 4.8vw, 3.5rem); font-weight: 700; letter-spacing: -.03em; max-width: 20ch; }
+.hero h1 { font-size: clamp(2.1rem, 4.8vw, 3.5rem); font-weight: 700; letter-spacing: -.03em; max-width: 24ch; }
 .hl { color: var(--accent); }
 .lead { font-size: 1.15rem; color: var(--muted); max-width: 58ch; }
 
